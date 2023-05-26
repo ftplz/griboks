@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/*
+Theme Name: nadzora
+Theme URI: 
+Author: 
+Author URI: 
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: WordPress 4.9.6
+Version: 1.4 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Twenty Nineteen is based on Underscores https://underscores.me/, (C) 2012-2019 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+.wp-pagenavi {
+    display: flex !important;
+    justify-content: center !important;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+    padding: 6px 14px;
+}
+
+.post-item {
+    margin-bottom: 30px;
+}
+
+.agree {display:none}
+
+.title__link span,.title__link span  a{    
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.5);    
+}
+.news-open__text p{
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+}
+.news-open__text-bold{
+    display: block;
+}
+
+.search{
+    background-image: url('img/bg_careers.png') !important;
+}
+.text-page__title p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.wpcf7 form.sent .wpcf7-response-output{
+    display: none !important
+}
+
+
+.post-links{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-links a{
+    width: 48%;
+}
+
+#search-form .arrow-link{ 
+    border: none;
+    background: none;
+    padding: 0;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;    
+    border: 1px solid #ced4da;
+}
+
+
+.rss-link {
+    display: flex;
+    align-items: center;
+}
+.rss-link .rss-link__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.rss-link svg path{
+    fill:#ee802f;
+}
+
+
+
+
+.content ul li, .content ol li {
+    position: relative;
+    display: block;
+    padding: 0.4em 0.4em 0.4em 2em;
+    margin: 0.5em 0;
+    background: #f6f6f6;
+    color: #444;
+    text-decoration: none;
+    border-radius: 0;
+    transition: .3s ease-out;
+}
+.content ol li {
+    padding-left: 40px;
+}
+
+.content ul:not(.toc_list) li:before {
+    content: counter('');
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #f27272;
+    height: 2em;
+    width: 2em;
+    font-size: 15px;
+    line-height: 2em;
+    border: 0.3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+    color: white;
+}
+
+.box-content{
+    padding-top: 105px;
+}

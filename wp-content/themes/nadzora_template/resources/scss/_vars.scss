@@ -1,0 +1,23 @@
+$default-font: "r-regular", sans-serif;
+$accent: #AE8F61;
+$text: #000;
+$transition1: all 0.4s ease;
+
+$screen-sm: 576px;
+$screen-md: 769px;
+$screen-lg: 992px;
+$screen-xl: 1300px;
+
+
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1180px;
+
+
+$grid-gutter-width: 20px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: $screen-sm, md: $screen-md, lg: $screen-lg, xl: $screen-xl);
+$container-max-widths: (sm: $container-sm, md: $container-md, lg: $container-lg, xl: $container-xl);
+
+$gutter: $grid-gutter-width;

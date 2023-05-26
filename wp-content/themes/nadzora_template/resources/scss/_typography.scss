@@ -1,0 +1,113 @@
+@import "mixins";
+.content{
+    font-family: r-light;
+
+    h1{
+        font-size: 40px;
+        font-family: r-light;
+        margin-bottom: 0.8em;
+        font-weight: normal;
+        margin-top: 0.8em;
+        line-height: 1.3em;
+		@include md(xl) {
+			font-size: 35px;
+		}  
+		@include md(lg) {
+			font-size: 30px;
+		}  
+    }
+	h2,.block-title{
+        font-size: 35px;
+        font-family: r-light;
+        margin-bottom: 0.8em;
+        font-weight: normal;
+        margin-top: 0.8em;
+        line-height: 1.3em;
+		@include md(xl) {
+			font-size: 30px;
+		}  
+		@include md(lg) {
+			font-size: 25px;
+		}  
+	}
+    h3{
+        font-size: 30px;
+        font-family: r-light;
+        margin-bottom: 0.8em;
+        margin-top: 0.8em;
+        font-weight: normal;
+        line-height: 1.3em;
+		@include md(xl) {
+			font-size: 25px;
+		}  
+    }
+    ol {
+		list-style:none;
+		counter-reset: olc;
+		padding-left: 0;
+	  li {
+		  position: relative;
+		  counter-increment: olc;
+		  padding-left: 80px;
+		  margin-bottom: 30px;
+		  line-height: 1.2em;
+		  &:before{
+			  @include pseudo();
+			  content:'0'counter(olc) ;
+			  left: 0;
+			  top:50%;            
+			  height: 100%;
+              line-height: 100%;
+			  width: 40px;
+			  font-size: 40px;
+			  @include md(md) {
+				font-size: 30px;
+			}
+			  font-family: r-black;
+			  line-height: 0px;
+			  color: #F1C40F;
+		  }
+	  }
+	}
+}
+// h1{
+//     font-family: m-regular;
+//     font-size: 110px;
+//     font-style: normal;
+//     font-weight: 600;
+//     line-height: 1.1em;
+//     @include md(md){    
+//         font-family: m-regular;
+//         font-size: 40px;
+//         font-style: normal;
+//         font-weight: 600;
+//         line-height: 41px;
+//     }
+// }
+
+// h2{       
+//     font-size: 80px;
+//     font-style: normal;
+//     font-weight: 600;
+//     line-height: 98px;
+//     line-height: 1.1em;
+//     @include md(md){
+//         font-family: m-regular;
+//         font-size: 32px;
+//         font-style: normal;
+//         font-weight: 600;
+//         line-height: 33px;
+//     }
+// }
+
+.clear{
+	clear: both;
+}
+
+// Стили для контента ВП
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }

@@ -1,0 +1,40 @@
+@import "mixins";
+
+input, 
+textarea {
+    outline: none; 
+    &:focus:required:invalid {
+        border-color: red;
+    }
+    &:required:valid {
+        border-color: green;
+    }
+}
+
+.form-control{
+    border-radius: 0;
+}
+.form-row_30{
+    @include md(md) {
+      flex-wrap: wrap;
+    }
+    .form-groupe{
+        width: 31%;
+        margin-bottom: 30px;
+        @include md(md) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+.form-row_50{
+    .form-groupe{
+        width: 48%;
+        margin-bottom: 30px;
+        @include md(md) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+}
